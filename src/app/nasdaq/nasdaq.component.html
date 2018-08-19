@@ -3,8 +3,8 @@
     <span>NASDAQ:</span><span>{{ mySymbol }}</span>
   </div>
   <div>
-    <span>{{ cost }}</span><span>USD</span>
+    <span>{{ cost }}</span><span style="font-size: 12px;">USD</span>
   </div>
-  <div>{{ myPerc }}</div>
-  <div>{{ timeStap }}</div>
+  <div [style.color] = "myTempVar >= 0 ? 'green' : 'red'">{{ myPerc }}</div>
+  <div style="font-size: 12px;">{{ timeStap }}</div>
 </div>

@@ -11,7 +11,8 @@ export class DataService {
   constructor(private http: HttpClient) { }
 	//private quoteProviderURL = "https://www.alphavantage.co/";
   private apiKey = "BUCAQ9RJZL6I9X12";
-  
+  //private apiKey = "QG287U6DYK6RIIYC";
+
   private BASE_URL = 'https://www.alphavantage.co/query?function='
 
   getDayly(symbol): Observable<DataModel>{
