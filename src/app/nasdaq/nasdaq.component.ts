@@ -26,6 +26,7 @@ export class NasdaqComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.getData('VRNS')
     setInterval(()=>{
       if(this.count == 0) this.getData('VRNS')
     }, 60000)
